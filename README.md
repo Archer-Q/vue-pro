@@ -1,4 +1,4 @@
-# zhiyuan
+# vue-pro
 
 ## Project setup
 ```

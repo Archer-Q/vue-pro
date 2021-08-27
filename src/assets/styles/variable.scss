@@ -1,0 +1,61 @@
+/**
+ * 变量，整体风格颜色，字体大小设置
+ */
+ $themeColor: #409EFF;
+ $white: #fff;
+ // 辅助色
+ $success: #67C23A;
+ $warning: #E6A23C;
+ $danger: #F56C6C;
+ $info: #909399;
+ 
+ // 文字颜色
+ $label: #303133;
+ $value: #606266;
+ $minor: #909399;
+ $place: #C0C4CC;
+ 
+ // 浅色投影
+ $box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+ 
+ @mixin BlueGradients {
+   background: -webkit-linear-gradient(#38bce7, #177ec8); /* Safari 5.1 - 6.0 */
+   background: -o-linear-gradient(#38bce7, #177ec8); /* Opera 11.1 - 12.0 */
+   background: -moz-linear-gradient(#38bce7, #177ec8); /* Firefox 3.6 - 15 */
+   background: linear-gradient(#38bce7, #177ec8); /* 标准的语法（必须放在最后） */
+ }
+ 
+ @mixin Width($value: 100%) {
+   width: $value;
+ }
+ 
+ @mixin Margin($value: 10px) {
+   margin-left: $value;
+ }
+ 
+ * {
+   padding: 0;
+   margin: 0;
+ }
+ 
+ a {
+   text-decoration: none;
+ }
+ 
+ li {
+   list-style: none;
+ }
+ 
+ .clearfix {
+   content: '';
+   display: block;
+   clear: both;
+ }
+ 
+ body {
+   overflow: hidden;
+   font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+   font-size: 14px;
+   color: $value;
+   line-height: 1.5em;
+ }
